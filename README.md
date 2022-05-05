@@ -13,8 +13,8 @@
 - Install the extension file on your Chrome.
 
 ## References
-- [世界からのサプライズ動画/もうポチっちゃえよ](https://www.youtube.com/watch?v=X8v20C2X2Ag): 元動画
-- [iamtakagi-lab/youtube-web-player](https://github.com/iamtakagi-lab/youtube-web-player): YouTube Stream をエンコードするためのバックエンドとして使用
+- [世界からのサプライズ動画/もうポチっちゃえよ](https://www.youtube.com/watch?v=X8v20C2X2Ag)
+- [iamtakagi-lab/youtube-web-player](https://github.com/iamtakagi-lab/youtube-web-player)
 
 ## LICENSE
 MIT License.
