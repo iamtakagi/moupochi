@@ -13,5 +13,11 @@
       "js": ["contentScript.js"],
       "run_at": "document_end"
     }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["video.mp4"],
+      "matches": ["<all_urls>"]
+    }
   ]
 }
