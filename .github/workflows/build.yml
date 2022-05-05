@@ -31,3 +31,11 @@ jobs:
         uses: actions/upload-artifact@v2.2.4
         with:
           path: ${{ github.event.release.tag_name }}.zip
+      
+      - name: Upload Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: '${{ github.event.release.tag_name }}.zip'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
