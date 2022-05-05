@@ -27,7 +27,7 @@ jobs:
         run: yarn build
 
       - name: Zip Folder
-        run: zip -r ${{env.REPOSITORY_NAME}}-${{ github.event.release.tag_name }}.zip ./extension/*
+        run: zip -jr ${{env.REPOSITORY_NAME}}-${{ github.event.release.tag_name }}.zip ./extension/*
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2.2.4
