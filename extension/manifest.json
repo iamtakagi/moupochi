@@ -6,7 +6,10 @@
   "permissions": [],
   "content_scripts": [
     {
-      "matches": ["https://www.amazon.co.jp/gp/cart/view.html*"],
+      "matches": [
+        "https://www.amazon.co.jp/gp/cart/view.html*",
+        "https://www.apple.com/jp/shop/bag*"
+      ],
       "js": ["contentScript.js"],
       "run_at": "document_end"
     }
