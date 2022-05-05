@@ -1,9 +1,8 @@
 name: Build Extension
 
 on:
-  create:
-    tags:
-      - '*'
+  release:
+    types: [published]
 
   workflow_dispatch:
 
