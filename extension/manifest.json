@@ -1,0 +1,14 @@
+{
+  "name": "mou-pochicchaeyo-chrome-ext",
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "description": "もうポチっちゃえよ Chrome Extension",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://www.amazon.co.jp/gp/cart/view.html*"],
+      "js": ["contentScript.js"],
+      "run_at": "document_end"
+    }
+  ]
+}

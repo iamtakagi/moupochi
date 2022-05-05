@@ -1,0 +1,12 @@
+{
+  "name": "mou-pochicchaeyo-chrome-ext",
+  "version": "1.0.0",
+  "author": "iamtakagi",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.2"
+  }
+}
