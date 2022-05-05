@@ -22,7 +22,7 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Zip Folder
-        run: zip -r ${{ github.event.release.tag_name }}.zip ./extension/*"
+        run: zip -r ${{ github.event.release.tag_name }}.zip ./extension/*
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2.2.4
