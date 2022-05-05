@@ -8,6 +8,7 @@ async function play() {
         video.src = "https://ytwp.iamtakagi.net/stream?url=https://www.youtube.com/watch?v=X8v20C2X2Ag";
         video.autoplay = true;
         video.controls = true;
+        video.style.maxWidth = '100%';
         target.appendChild(video);
 
         setTimeout(async () => {
