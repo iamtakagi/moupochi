@@ -1,7 +1,7 @@
 {
   "name": "mou-pochicchaeyo-chrome-ext",
   "manifest_version": 3,
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "もうポチっちゃえよ Chrome Extension",
   "permissions": [],
   "content_scripts": [
