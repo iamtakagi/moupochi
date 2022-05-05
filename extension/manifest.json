@@ -1,9 +1,19 @@
 {
-  "name": "mou-pochicchaeyo-chrome-ext",
+  "name": "もうポチっちゃえよ Chrome Extension",
+  "author": "iamtakagi",
   "manifest_version": 3,
   "version": "1.2.1",
-  "description": "もうポチっちゃえよ Chrome Extension",
+  "description": "カートで悩んでる時にポチらせます",
   "permissions": [],
+  "action": {
+    "default_title" : "もうポチっちゃえよ Chrome Extension",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
   "content_scripts": [
     {
       "matches": [
