@@ -20,6 +20,9 @@ jobs:
 
       - name: Install Dependencies
         run: yarn install --frozen-lockfile
+      
+      - name: Build Extension
+        run: yarn build
 
       - name: Zip Folder
         run: zip -r ${{ github.event.release.tag_name }}.zip ./extension/*
