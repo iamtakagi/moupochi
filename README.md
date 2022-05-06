@@ -6,6 +6,7 @@
 [![GitHub license](https://img.shields.io/github/license/iamtakagi/mou-pochicchaeyo-chrome-ext)](https://github.com/iamtakagi/mou-pochicchaeyo-chrome-ext/blob/master/LICENSE)
 
 ![](https://i.imgur.com/5pjYyLE.jpeg)
+![](https://user-images.githubusercontent.com/12772118/166947533-44ab1fd8-d0e7-45ce-a00c-212663f75838.png)
 
 ## Install
 - Download the extension zip file from [Releases](https://github.com/iamtakagi/mou-pochicchaeyo-chrome-ext/releases).
