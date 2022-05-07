@@ -12,7 +12,7 @@ interface Video {
 let video: Video | null = null;
 let player: HTMLVideoElement | null = null;
 
-async function initialize() {
+function initialize() {
   const body = document.body || document.getElementsByTagName("body")[0];
   if (body !== null) {
     player = document.createElement("video") as HTMLVideoElement;
@@ -38,12 +38,12 @@ async function loadVideo() {
   video = {
     blob,
     runtimeUrl,
-    objectUrl,
+    objectUrl
   };
 }
 
 
-async function playVideo() {
+function playVideo() {
   setTimeout(() => {
     if (player !== null && video) {
       player.src = video.objectUrl;
