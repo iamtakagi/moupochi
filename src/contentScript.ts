@@ -52,8 +52,8 @@ function playVideo() {
   }, 500);
 }
 
-(() => {
-  initialize()
-  loadVideo()
-  playVideo()
-})();
+Promise.all([
+  initialize(),
+  loadVideo(),
+  playVideo(),
+]);
