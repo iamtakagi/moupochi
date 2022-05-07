@@ -11,7 +11,7 @@
 ## Install
 - Download the extension zip file from [Releases](https://github.com/iamtakagi/mou-pochicchaeyo-chrome-ext/releases).
 - Unzip the extension file.
-- Install the extension file on your Chrome.
+- Install the extension file into your Chrome.
 
 ## References
 - [世界からのサプライズ動画/もうポチっちゃえよ](https://www.youtube.com/watch?v=X8v20C2X2Ag)
