@@ -1,27 +1,59 @@
-async function play() {
-  const body = document.body || document.getElementsByTagName("body")[0];
+const selectors = [
+  /* Amazon */ "#sc-active-cart",
+  /* Apple */ "#bag-content",
+] as const;
 
+interface Video {
+  blob: Blob;
+  runtimeUrl: string;
+  objectUrl: string;
+}
+
+let video: Video | null = null;
+let player: HTMLVideoElement | null = null;
+
+async function initialize() {
+  const body = document.body || document.getElementsByTagName("body")[0];
   if (body !== null) {
-    const video = document.createElement("video") as HTMLVideoElement;
-    const target = body.querySelector("#sc-active-cart,#bag-content");
+    player = document.createElement("video") as HTMLVideoElement;
+    const target = body.querySelector(selectors.join(","));
     if (target !== null) {
-      const blob = await fetch(chrome.runtime.getURL('video.mp4')).then((r) => r.blob());
-      function createObjectURL(obj: Blob | MediaSource) {
-        return window.URL
-          ? window.URL.createObjectURL(obj)
-          : window.webkitURL.createObjectURL(obj);
-      }
-      const url = createObjectURL(blob);
-      video.src = url
-      video.autoplay = true;
-      video.controls = true;
-      video.style.maxWidth = '100%';
-      target.appendChild(video);
-      setTimeout(() => {
-        video.play()
-      }, 500);
+      player.autoplay = true;
+      player.controls = true;
+      player.style.maxWidth = "100%";
+      target.appendChild(player);
     }
   }
 }
 
-play()
+async function loadVideo() {
+  const runtimeUrl = chrome.runtime.getURL("video.mp4");
+  const blob = await fetch(runtimeUrl).then((r) => r.blob());
+  function createObjectURL(obj: Blob | MediaSource) {
+    return window.URL
+      ? window.URL.createObjectURL(obj)
+      : window.webkitURL.createObjectURL(obj);
+  }
+  const objectUrl = createObjectURL(blob);
+  video = {
+    blob,
+    runtimeUrl,
+    objectUrl,
+  };
+}
+
+
+async function playVideo() {
+  setTimeout(() => {
+    if (player !== null && video) {
+      player.src = video.objectUrl;
+      player.play()
+    }
+  }, 500);
+}
+
+(() => {
+  initialize()
+  loadVideo()
+  playVideo()
+})();
