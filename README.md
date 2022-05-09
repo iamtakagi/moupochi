@@ -2,7 +2,7 @@
 
 [![Build Extension](https://github.com/iamtakagi/mou-pochicchaeyo-chrome-ext/actions/workflows/build.yml/badge.svg)](https://github.com/iamtakagi/mou-pochicchaeyo-chrome-ext/actions/workflows/build.yml)
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/iamtakagi/mou-pochicchaeyo-chrome-ext)
-![Chrome Web Store](https://img.shields.io/chrome-web-store/v/fejaklhhhccnlcgnapejecfofkackgic)
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/fejaklhhhccnlcgnapejecfofkackgic)](https://chrome.google.com/webstore/detail/%E3%82%82%E3%81%86%E3%83%9D%E3%83%81%E3%81%A3%E3%81%A1%E3%82%83%E3%81%88%E3%82%88-chrome-extensio/fejaklhhhccnlcgnapejecfofkackgic)
 ![GitHub all releases](https://img.shields.io/github/downloads/iamtakagi/mou-pochicchaeyo-chrome-ext/total)
 [![GitHub license](https://img.shields.io/github/license/iamtakagi/mou-pochicchaeyo-chrome-ext)](https://github.com/iamtakagi/mou-pochicchaeyo-chrome-ext/blob/master/LICENSE)
 
