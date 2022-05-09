@@ -8,6 +8,7 @@ on:
 
 env:
   REPOSITORY_NAME: ${{ github.event.repository.name }}
+  EXTENSION_ID: fejaklhhhccnlcgnapejecfofkackgic
 
 jobs:
   build:
