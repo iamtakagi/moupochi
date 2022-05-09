@@ -2,7 +2,7 @@
   "name": "もうポチっちゃえよ Chrome Extension",
   "author": "iamtakagi",
   "manifest_version": 3,
-  "version": "1.2.2",
+  "version": "1.3.0",
   "description": "カートで悩んでる時にポチらせます",
   "permissions": [],
   "action": {
