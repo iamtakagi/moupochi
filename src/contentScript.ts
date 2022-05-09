@@ -45,7 +45,7 @@ async function loadVideo() {
 
 function playVideo() {
   setTimeout(() => {
-    if (player !== null && video) {
+    if (player !== null && video !== null) {
       player.src = video.objectUrl;
       player.play()
     }
