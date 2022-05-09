@@ -8,7 +8,6 @@ on:
 
 env:
   REPOSITORY_NAME: ${{ github.event.repository.name }}
-  EXTENSION_ID: fejaklhhhccnlcgnapejecfofkackgic
 
 jobs:
   build:
@@ -42,11 +41,3 @@ jobs:
           files: ${{ env.REPOSITORY_NAME }}-${{ github.event.release.tag_name }}.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Release to Chrome Web Store
-        uses: mnao305/chrome-extension-upload@2.2.0
-        with:
-          file-path: ${{ env.REPOSITORY_NAME }}-${{ github.event.release.tag_name }}.zip
-          extension-id: ${{ env.EXTENSION_ID }}
-          client-id: ${{ secrets.GOOGLE_CLIENT_ID }}
-          refresh-token: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
