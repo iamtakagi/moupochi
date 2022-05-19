@@ -4,7 +4,7 @@
   "author": "iamtakagi",
   "license": "MIT",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc && cd extension && zip ../extension.zip *.*"
   },
   "devDependencies": {
     "typescript": "^4.6.2",

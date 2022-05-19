@@ -24,7 +24,7 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Build Extension
-        run: yarn build
+        run: yarn tsc
 
       - name: Zip Folder
         run: zip -jr ${{ env.REPOSITORY_NAME }}-${{ github.event.release.tag_name }}.zip ./extension/*
