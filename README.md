@@ -1,4 +1,4 @@
-# mou-pochicchaeyo-ext
+# mou-pochicchaeyo
 
 [![Build Extension](https://github.com/iamtakagi/mou-pochicchaeyo-ext/actions/workflows/build.yml/badge.svg)](https://github.com/iamtakagi/mou-pochicchaeyo-ext/actions/workflows/build.yml)
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/iamtakagi/mou-pochicchaeyo-ext)
