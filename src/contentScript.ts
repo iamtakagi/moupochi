@@ -27,7 +27,7 @@ function initialize() {
 }
 
 async function loadVideo() {
-  const runtimeUrl = chrome.runtime.getURL("video.mp4");
+  const runtimeUrl = browser.runtime.getURL("video.mp4");
   const blob = await fetch(runtimeUrl).then((r) => r.blob());
   function createObjectURL(obj: Blob | MediaSource) {
     return window.URL
