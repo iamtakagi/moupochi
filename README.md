@@ -10,8 +10,7 @@
 
 ## Install
 - Download the extension zip file from [Releases](https://github.com/iamtakagi/mou-pochicchaeyo-ext/releases).
-- Unzip the extension file.
-- Install the extension file into your Firefox.
+- Install the zip file into your Firefox.
 
 ## LICENSE
 MIT License.
